@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="jquery.js" type="text/javascript"></script>
+    <script src="script.js" type="text/javascript"></script>
+</head>
+<body class="body-hp">
+    <div class="menu" style="float: left;">
+        <table border="0" width="100%" style="font-family: verdana; padding: 20px;">
+            <tr>
+                <td style="font-size: 20pt;" align="center"><b>Menu Makanan</b></td>
+            </tr>
+            <tr>
+                <td><hr></td>
+            </tr>
+        </table>
+        <table style="font-family: verdana; margin-left: 70px; margin-bottom: 50px;">
+            <tr>
+                <td>
+                    <table border="0" style="border: 1px solid; padding: 10px;">
+                        <tr>
+                            <td>
+                                <img src="img/guramebakar.jpeg" alt="" width="250px" height="150px">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Gurame Bakar
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="padding-bottom: 10px;">Rp.25.000</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <button type="submit" value="gurame" onclick="tambah(1)" id="add">Add</button>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+                <td>
+                    <table border="0" style="border: 1px solid; padding: 10px; margin-left: 50px;">
+                        <tr>
+                            <td>
+                                <img src="img/soto.jpeg" alt="" width="250px" height="150px">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Soto
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="padding-bottom: 10px;">Rp.15.000</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <button type="submit" value="soto" onclick="tambah(2)" id="add">Add</button>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <table border="0" style="border: 1px solid; padding: 10px; margin-top: 30px;">
+                        <tr>
+                            <td>
+                                <img src="img/geprek.jpeg" alt="" width="250px" height="150px">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Ayam Geprek
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="padding-bottom: 10px;">Rp.13.000</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <button type="submit" value="geprek" onclick="tambah(3)" id="add">Add</button>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+                <td>
+                    <table border="0" style="border: 1px solid; padding: 10px; margin-left: 50px; margin-top: 30px;">
+                        <tr>
+                            <td>
+                                <img src="img/lele.jpeg" alt="" width="250px" height="150px">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Lalapan Lele
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="padding-bottom: 10px;">Rp.10.000</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <button type="submit" value="lele" onclick="tambah(4)" id="add">Add</button>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <table border="0" style="border: 1px solid; padding: 10px; margin-top: 30px;">
+                        <tr>
+                            <td>
+                                <img src="img/esteh.jpeg" alt="" width="250px" height="150px">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Es Teh
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="padding-bottom: 10px;">Rp.3000</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <button type="submit" value="teh" onclick="tambah(5)" id="add">Add</button>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+                <td>
+                    <table border="0" style="border: 1px solid; padding: 10px; margin-left: 50px; margin-top: 30px;">
+                        <tr>
+                            <td>
+                                <img src="img/esjeruk.jpeg" alt="" width="250px" height="150px">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Es Jeruk
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="padding-bottom: 10px;">Rp.4000</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <button type="submit" value="jeruk" onclick="tambah(6)" id="add">Add</button>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>    
+        </table>
+    </div>
+    <div class="transaksi" style="float: right;">
+        <table border="0" width="100%" style="font-family: verdana; padding: 20px;">
+            <tr>
+                <td style="font-size: 20pt;" align="center"><b>Transaksi</b></td>
+            </tr>
+            <tr>
+                <td><hr></td>
+            </tr>
+        </table>
+        <table style="font-family: verdana; padding: 20px; float: left;">
+            <tr>
+                <td>Kode Pemesanan</td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="text" name="" id="kdPesan" class="btn-trans" readonly>
+                </td>
+            </tr>
+            <tr>
+                <td>No. Meja</td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="number" name="" id="noMeja" class="btn-trans">
+                </td>
+            </tr>
+            <tr>
+                <td>Nama Customer</td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="text" name="" id="nmCust" class="btn-trans">
+                </td>
+            </tr>
+        </table>
+        <table border="0" width="35%" style="font-family: verdana; float: right; margin-top: 110px;">
+            <tr>
+                <td>
+                    <input type="button" value="Bayar" id="bayar" class="trans-btn-byr">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="button" value="Reset" id="reset" class="trans-btn-rst">
+                </td>
+            </tr>
+        </table>
+        <table border="1" width="90%" style="font-family: verdana; margin-top: 50px; margin-left: 20px;margin-bottom: 50px; border-collapse: collapse;" name="table-menu">
+            <tr>
+                <td>Nama Menu</td>
+                <td>Qty</td>
+                <td>Harga</td>
+                <td>Sub Total</td>
+            </tr>
+
+            <tr>
+                <td id="totBayar" colspan="4" align="center"></td>
+            </tr>
+        </table>
+    </div>
+    <div class="a1" style="float: right; margin-top: 50px;">
+    
+    </div>
+    <div class="a2" style="float: right; display: none;">
+        <table border="0" width="100%" style="font-family: verdana;">
+            <tr>
+                <td align="center" colspan="3"><h2>Warung Oyi<hr></h2></td>
+            </tr>
+            <tr>
+                <td width="30%" style="padding-left: 10px;">No Pesanan</td>
+                <td width="5%">:</td>
+                <td>asd</td>
+            </tr>
+            <tr>
+                <td style="padding-left: 10px;">Tanggal</td>
+                <td>:</td>
+                <td>asd</td>
+            </tr>
+            <tr>
+                <td style="padding-left: 10px;">No Meja</td>
+                <td>:</td>
+                <td>asd</td>
+            </tr>
+        </table>
+        <table border="1" width="90%" style="font-family: verdana; margin-top: 30px; margin-left: 20px;margin-bottom: 50px; border-collapse: collapse;" name="table-menu">
+            <tr>
+                <td>Nama Menu</td>
+                <td>Qty</td>
+                <td>Harga</td>
+                <td>Sub Total</td>
+            </tr>
+
+            <tr>
+                <td id="totBayar" colspan="4" align="center"></td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>
